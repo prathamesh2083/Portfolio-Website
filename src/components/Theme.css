@@ -1,0 +1,789 @@
+.Mode{
+    width: 32px;
+    
+   margin: 20px;
+   margin-bottom: 10px;
+ margin-top: 0;
+    
+}
+body{
+   overflow-x: hidden !important;
+    background-image: url("./white_back.jpg");
+    
+    object-fit: cover;
+    height: 100%;
+    min-width: 360px;
+    max-height: 640px;
+    
+}
+
+/* navbar css */
+.navbar-toggler {
+
+    border: 1px solid black;
+    
+
+}
+.Logo{
+        padding: 5px;
+
+        font-size: 45px;
+        font-family: 'Whisper', cursive;
+        font-weight: bold;
+}
+.navbar {
+            display: flex;
+            justify-content: left;
+            box-shadow: 0px 0px 20px 0px #d6d3d3;
+    
+}
+ .nav-link {
+     color:black;
+
+ }
+ .nav-item {
+
+     font-weight: 500;
+     font-size: large;
+
+ }
+ .hover-underline-animation {
+     display: inline-block;
+     position: relative;
+     color: #060607;
+ }
+
+ .hover-underline-animation::after {
+     content: '';
+     position: absolute;
+     width: 100%;
+     transform: scaleX(0);
+     height: 2px;
+     bottom: 0;
+     left: 0;
+     background-color: #000000;
+
+     transition: transform 0.35s ease-out;
+ }
+
+ .hover-underline-animation:hover::after {
+     transform: scaleX(1);
+     /* transform-origin: bottom left; */
+ }
+
+ @media(max-width:992px) {
+     .hover-underline-animation::after {
+         content: '';
+         position: absolute;
+         width: 15%;
+         transform: scaleX(0);
+         height: 2px;
+         bottom: 0;
+         left: 0;
+         background-color: #000000;
+         transform-origin: bottom left;
+         transition: transform 0.25s ease-out;
+     }
+
+     .hover-underline-animation:hover::after {
+         transform: scaleX(4);
+         transform-origin: bottom left;
+         width: 28%;
+     }
+ }
+
+/* homepage css */
+
+.homecontainer {
+    background-color: white;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.profile-photo img {
+    width: 100%;
+    height:45rem;
+}
+
+.home-name {
+    text-align: center;
+    font-size: 4rem;
+}
+
+.home-role {
+    text-align: center;
+    font-size: 20px;
+}
+
+.home-info {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    min-width: 500px;
+}
+
+.home-pic {
+    min-width: 500px;
+    width: 45%;
+}
+
+@media(max-width:617px) {
+    .profile-photo img {
+
+        height: 600px;
+    }
+}
+@media(max-width:468px) {
+   body{
+    background-image: none;
+   }
+    .navbar{
+        box-shadow: 0px 0px 0px 0px #d6d3d3;
+    }
+    .home-role{
+        margin-left: 100px;
+    }
+       
+         .home-name {
+             margin-left: 100px;
+         }
+         .home-pic img{
+            height: 550px;
+         }
+         .home-pic{
+            margin-left: 80px;
+            
+         }
+    .project-card{
+        
+        min-width: 370px !important;
+        margin-left: 170px !important;
+    }
+    .profile-card{
+        margin-left: 180px !important;
+    }
+    .profile-photo img {
+
+        width: 400px;
+        margin-left: 80px !important;
+        
+    }
+    .resume-background{
+        min-width: 300px;
+        width: 500px;
+
+    }
+        footer {
+            min-width: 500px !important;
+            width: 500px;
+        }
+        .contact-form{
+            margin-left: 50px !important;
+        }
+        .contact-head{
+            
+            margin-left: 50px;
+        }
+        .contact-page{
+        min-width: 200px !important;
+            width: 450px !important;
+        }
+      
+
+}
+
+/* footer css */
+ 
+
+ footer {
+   
+     background-color: #212121;
+     color: white;
+    border-top: 1px solid white;
+     position: absolute;
+     width: 100%;
+     min-width: 430px;
+     /* height: 100%; */
+     /* margin-top: 100px; */
+     padding: 20px;
+     /* padding-top: 100px; */
+     
+
+
+ }
+
+ .footer-container {
+
+     padding: 20px;
+     display: flex;
+     flex-direction: row;
+     justify-content: space-around;
+     flex-wrap: wrap;
+
+ }
+
+ .footer-heading {
+     font-size: 35px;
+     font-family: serif;
+     border-bottom: 2px solid white;
+
+ }
+
+ .footer-div {
+
+     text-align: center;
+     padding: 10px;
+
+ }
+
+ .footer-div a {
+
+     color: white;
+     text-decoration: none;
+ }
+
+ .footer-div a:hover {
+
+     color: white;
+
+ }
+
+ .footer-contact {
+     text-align: left;
+ }
+
+ .footer-links {
+
+     margin: 10px;
+ }
+
+ .footer-links a {
+     margin: 10px;
+ }
+ /* contact page light theme */
+  .contact-page {
+      flex-wrap: wrap;
+      justify-content: center;
+      display: flex;
+      min-height: 700px;
+      padding-bottom: 50px;
+  }
+
+  .contact-head {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      min-width: 500px;
+  }
+
+  .contact-form {
+      text-align: center;
+      height: 400px;
+      background-color: rgb(244, 244, 250);
+      border-style: groove;
+      border-radius: 20px;
+      margin: auto;
+      padding: 30px;
+      width: 40%;
+
+
+      min-width: 400px;
+
+
+  }
+
+  .contact-form form {
+      margin: auto;
+      text-align: center;
+
+  }
+
+  .contact-form input {
+
+      flex-shrink: 3;
+      width: 90%;
+      margin: 20px;
+      text-align: center;
+      height: 50px;
+      border-radius: 10px;
+      box-shadow: 0px 0px 20px 0px #d6d3d3;
+      padding: 20px;
+  }
+   /*  profiles-page css */
+   .Profile-page {
+    /* background-color: white; */
+       margin: auto;
+       margin-top: 50px;
+       margin-bottom: 50px;
+
+       width: 90%;
+       display: flex;
+       justify-content: center;
+       flex-wrap: wrap;
+   }
+
+   .profile-card {
+    background-color: white;
+       border: 1.1px solid black;
+       border-radius: 7px;
+       display: flex;
+       flex-direction: column;
+
+       transition: transform .9s;
+       margin: 20px;
+       justify-content: space-evenly;
+       padding: 30px;
+       width: 25%;
+       min-width: 320px;
+       min-height: 370px;
+
+       box-shadow: 0px 0px 15px 0px #9c9898;
+   }
+
+   .profile-card:hover {
+
+       transform: scale(1.06);
+
+   }
+
+   .card-logo {
+
+       width: 100%;
+       height: 70px;
+
+   }
+
+   .card-logo-div hr {
+
+       border: 1px solid black;
+
+       height: 2px;
+       /* Set the hr color */
+       color: #000000;
+       /* old IE */
+       background-color: #000000;
+       /* Modern Browsers */
+   }
+
+
+   .card-info {
+
+
+
+       word-wrap: normal;
+       font-size: 1rem;
+
+   }
+
+   .card-link {
+
+       width: 100%;
+       border-radius: 5px;
+       text-align: center;
+
+       padding: 10px;
+       /* height: 30px; */
+       background-color: rgb(66, 64, 64);
+   }
+
+   .card-link a {
+
+       color: rgb(255, 255, 255);
+       font-size: 17px;
+       text-decoration: none;
+   }
+
+   .card-link:hover {
+
+       background-color: rgb(73, 72, 72);
+   }
+
+   .card-link a:hover {
+       color: rgb(255, 255, 255);
+
+   }
+
+   .card-name {
+
+       font-size: 20px;
+       font-weight: bold;
+
+   }
+   /* Project page css */
+
+   .project-card {
+
+       border: 1.1px solid black;
+       border-radius: 7px;
+       display: flex;
+       flex-shrink: 2;
+       flex-direction: column;
+       text-align: center;
+       transition: transform .9s;
+       box-shadow: 0px 0px 15px 0px #9c9898;
+       margin: 30px;
+
+       justify-content: space-evenly;
+       padding: 30px;
+       width: 40%;
+       min-width: 450px;
+       min-height: 550px;
+
+
+   }
+
+   .project-image {
+       border: 1px solid rgb(188, 184, 184);
+       width: 100%;
+       display: flex;
+       justify-content: center;
+
+   }
+
+   .project-card:hover {
+
+       transform: scale(1.03);
+
+   }
+
+   .project-image img {
+       width: 100%;
+
+       height: 200px;
+       display: flex;
+       justify-content: center;
+
+   }
+
+   .project-foot {
+       padding: 5px;
+       display: flex;
+
+   }
+
+   .project-github-link {
+       text-align: right;
+       width: 20%;
+   }
+
+   .project-tech {
+       width: 80%;
+       text-align: left;
+   }
+   .project_page_background {
+      
+       padding-bottom: 50px;
+   }
+
+.dark{
+   
+@media(max-width:468px) {
+    body{
+        justify-content: center;
+    }
+               
+        .navbar{
+            min-width: 500px !important;
+        }
+        .project-card {
+
+            min-width: 370px !important;
+            margin-left: 35px !important;
+        }
+        .Profile-page{
+           overflow-x: unset;
+            min-width: 500px !important;
+            margin-right: 120px !important;
+            
+        }
+        .profile-card {
+            
+            margin-left: 0px !important;
+        }
+
+        .profile-photo img {
+
+            width: 400px;
+            margin-left: 80px !important;
+
+        }
+        .contact-form {
+        margin-left: 50px !important;
+        }
+        
+        .contact-head {
+        
+         margin-left: 10px;
+         }
+        .contact-page {
+            min-width: 200px !important;
+            width: 500px !important;
+         }
+        
+    }
+    body {
+        background-image: url("./Theme_back.jpg");
+            background-size: cover;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        
+    .navbar{
+     
+            min-width: 430px;
+        
+                box-shadow: 0px 0px 0px 0px #d6d3d3;
+        /* background-image: url("./Theme_back.jpg"); */
+            background-color: #1d1e23;
+    }
+        .navbar-toggler{
+            
+            
+            background-color: rgb(152, 147, 147);
+           
+        }
+    /* nav css */
+        .Logo {
+               color:white
+            }
+        .nav-link {
+            color: rgb(255, 255, 255) !important;
+    
+        }
+
+        .hover-underline-animation {
+            
+            color: #060607;
+        }
+    
+        .hover-underline-animation::after {
+           
+            background-color: #ffffff;
+    
+           
+        }
+        @media(max-width:992px) {
+            .hover-underline-animation::after {
+                
+                background-color: #ffffff;
+               
+            }
+
+        }
+    
+        /*  contact page css  */
+        .contact-page {
+           color: white;
+            background-color: #1d1e23;
+    
+        }
+                .contact-form input {
+        
+                   
+                    box-shadow: 0px 0px 2px 0px #d6d3d3;
+                    
+                }
+    
+       
+    
+        .contact-form {
+            color: white;
+            border: 1px solid white;
+            background-color: #1a1c1f;
+    
+    
+        }
+    
+       
+    
+        
+        /*  profiles-page css */
+        .profile_page_background{
+            
+           
+            background-color: #17171b;
+        }
+        .Profile-page {
+            /* //background-image: url("./Theme_back.jpg"); */
+            /* background-color: #1d1e23; */
+            background-color: #17171b;
+            margin: auto;
+            /* margin-top: 50px; */
+            padding-top: 50px;
+            padding-bottom: 100px;
+            /* margin-bottom: 50px; */
+    
+            
+        }
+    
+        .profile-card {
+   
+           
+            background-color: #1d1e23;
+            color: white;
+           
+            border: 1.1px solid rgb(255, 255, 255);
+           
+    
+            box-shadow: 0px 0px 0px 0px #9c9898;
+        }
+    
+        
+    
+        
+    
+        .card-logo-div hr {
+    
+            border: 1px solid black;
+    
+            height: 2px;
+            /* Set the hr color */
+            color: #000000;
+            /* old IE */
+            background-color: #000000;
+            /* Modern Browsers */
+        }
+    
+    
+        
+    
+        
+    
+        .card-link a {
+    
+            color: rgb(255, 255, 255);
+          
+        }
+    
+        .card-link:hover {
+    
+            background-color: rgb(73, 72, 72);
+        }
+    
+       
+    
+       
+    
+        /*  resume page css  */
+    
+        .resume-container {
+           
+            width: 100%;
+            height: 700px;
+    
+            object-fit: cover;
+            display: flex;
+            flex-direction: column;
+    
+    
+        }
+    
+        
+    
+        .resume-download {
+            display: flex;
+            flex-direction: column;
+            font-size: large;
+            margin: auto;
+            text-align: center;
+            font-weight: bold;
+    
+            justify-content: center;
+            height: 50px;
+            padding: 30px;
+            color: black;
+            border-radius: 10px;
+            background-color: rgb(230, 225, 225);
+        }
+    
+        .resume-download:hover {
+    
+            background-color: rgb(185, 180, 180);
+    
+        }
+    
+    
+        /* Project page css */
+    
+        .project-card {
+    
+            
+        box-shadow: 0px 0px 2px 0px #ffffff;
+    /* background-color: #1d1e23; */
+            color: white;
+         
+    
+        }
+                .project_page_background {
+                    /* background-image: url("./Theme_back.jpg"); */
+            background-color: #17171b;
+            min-width: 430px;
+                  
+                }
+        
+    
+        
+    
+       
+    
+      
+    
+      
+}
+.light{
+        
+        
+       
+        
+       
+    
+       
+        /*  resume page css  */
+    
+        .resume-container {
+            width: 100%;
+            height: 700px;
+    
+            object-fit: cover;
+            display: flex;
+            flex-direction: column;
+    
+    
+        }
+    
+        .resume-background {
+            filter: blur(0.1px);
+    
+        }
+    
+        .resume-download {
+            display: flex;
+            flex-direction: column;
+            font-size: large;
+            margin: auto;
+            text-align: center;
+            font-weight: bold;
+    
+            justify-content: center;
+            height: 50px;
+            padding: 30px;
+            color: black;
+            border-radius: 10px;
+            background-color: rgb(230, 225, 225);
+        }
+    
+        .resume-download:hover {
+    
+            background-color: rgb(185, 180, 180);
+    
+        }
+    
+    }   
+        
